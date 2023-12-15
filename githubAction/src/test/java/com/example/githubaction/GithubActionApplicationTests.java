@@ -12,9 +12,6 @@ class GithubActionApplicationTests {
     void contextLoads() {
     }
 
-    @Test
-    public void test2() {
-        System.out.println("성공했어요!");
-    }
+
 
 }
