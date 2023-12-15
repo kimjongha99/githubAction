@@ -8,14 +8,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-			- name: Git Checkout # 단위 명령어의 이름
-				uses: actions/checkout@v3.0.2 # 버전이 그때그때 달라지므로 문서에서 확인
+      - name: Git main # Name of the unit command
+        uses: actions/main@v3 # Version varies from time to time, so check in the document
 
-      - name: set up JDK 17
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: 17
+          distribution: temurin
           cache: gradle
 
       - name: Grant execute permission for gradlew
